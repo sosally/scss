@@ -1,0 +1,43 @@
+//04_extend.scss
+@import url(./reset.css);
+@import url(./03_mixin.css);
+/* extend 완전 똑같은거 */
+
+%colorSize {
+    color: darkcyan;
+    font-size: 24px;
+}
+
+%boxShadow {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5);
+}
+
+%padding {
+    padding: 2vw 4vw;
+}
+
+header {
+    @extend %colorSize;
+    @extend %padding;
+
+
+    & a {
+        color: blue;
+    }
+
+    nav>ul {
+        display: flex;
+        li:hover{
+
+        }
+        ul {
+            display: none;
+        }
+    }
+}
+
+h1 {
+    &>a:hover {
+        color: pink;
+    }
+}

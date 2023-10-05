@@ -1,0 +1,16 @@
+$bg-color: rgb(165, 165, 112);
+$color-red:#ff0000;
+$width100:100px;
+$per20:20%;
+$font-color:rgb(255, 59, 92);
+body{
+    background-color: $bg-color;
+}
+header ul li{
+    width: $width100 *3;
+    font-size: calc($width100 - 50px);
+}
+.section1-box>.section1-item>.section1-para{
+    color: $font-color;
+}
+//compile -> link
